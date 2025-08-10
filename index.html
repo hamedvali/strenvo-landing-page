@@ -32,7 +32,6 @@
     "additionalProperty": [
       { "@type": "PropertyValue", "name": "Capacity", "value": "24 oz / 700 ml" },
       { "@type": "PropertyValue", "name": "Features", "value": "Magnetic mount, phone holder (MagSafe compatible), leak-proof flip lid" },
-      { "@type": "PropertyValue", "name": "Care", "value": "Top-rack dishwasher safe" },
       { "@type": "PropertyValue", "name": "Surface note", "value": "Sticks to exposed steel; not aluminum or thick rubber coatings" }
     ],
     "offers": {
@@ -410,17 +409,40 @@
       <h2 class="section-title" data-reveal>Quick answers</h2>
       <div class="faq">
         <details data-reveal>
-          <summary>Is it MagSafe compatible?</summary>
-          <div>Yes. It holds MagSafe phones/cases. For non‑MagSafe phones we include an adhesive metal plate.</div>
+          <summary>Does the magnet hold with a full bottle?</summary>
+          <div>Yes. The magnetic base is strong enough to hold a full 24oz (700ml) bottle plus most phones without slipping on clean, flat steel surfaces.</div>
         </details>
+        
         <details data-reveal>
-          <summary>Is it leak‑proof?</summary>
-          <div>Yes. The flip‑top lid locks tight. Toss it in your bag without worry.</div>
+          <summary>Will it scratch my rack or phone?</summary>
+          <div>No. The magnetic base has a protective coating, and the phone mount uses a smooth magnetic surface or included adhesive plate to avoid scratches.</div>
         </details>
+        
         <details data-reveal>
-          <summary>Dishwasher safe?</summary>
-          <div>Top‑rack recommended. Magnets are fully enclosed to prevent rust.</div>
+          <summary>Can I use hot liquids?</summary>
+          <div>We recommend using the bottle for cold or room-temperature drinks. Hot liquids may create pressure inside and affect the flip lid seal.</div>
         </details>
+        
+        <details data-reveal>
+          <summary>What phones fit the holder?</summary>
+          <div>Any MagSafe-compatible iPhone fits directly. For other phones or cases, use the included adhesive metal plate for a secure hold.</div>
+        </details>
+        
+        <details data-reveal>
+          <summary>Is a shaker ball included?</summary>
+          <div>No. Instead of a ball, the Strenvo bottle comes with a removable mesh strainer for smooth, lump-free shakes.</div>
+        </details>
+        
+        <details data-reveal>
+          <summary>Can I remove the magnet?</summary>
+          <div>Yes. The magnet is removable, so you can take it out for cleaning or if you prefer using the bottle without it.</div>
+        </details>
+        
+        <details data-reveal>
+          <summary>Does it work on painted racks?</summary>
+          <div>Yes, as long as the paint is thin and the rack is made of steel. Very thick coatings or rubberized finishes can reduce magnetic strength.</div>
+        </details>
+        
       </div>
     </section>
     <br> <br>    <br> <br> 
@@ -520,8 +542,8 @@
       popup.setAttribute('aria-hidden','false');
       sessionStorage.setItem('promoShown','1');
     };
-    // Show popup after 20 seconds
-    setTimeout(openPopup, 1000);
+    // Show popup after 10 seconds
+    setTimeout(openPopup, 10000);
     window.addEventListener('scroll', ()=>{
       const sc = window.scrollY / (document.body.scrollHeight - window.innerHeight);
       if(sc > .6) openPopup();
