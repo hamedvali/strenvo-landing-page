@@ -1,0 +1,17 @@
+{
+  "name": "strenvo-landing",
+  "version": "1.0.0",
+  "description": "Strenvo magnetic shaker bottle landing page",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "dev-python": "python3 -m http.server 3000",
+    "dev-node": "npx serve . -p 3000",
+    "dev-php": "php -S localhost:3000",
+    "dev-ruby": "ruby -run -e httpd . -p 3000",
+    "open": "open http://localhost:3000",
+    "deploy": "fly deploy"
+  },
+  "keywords": ["landing-page", "strenvo", "static-site"],
+  "author": "Strenvo",
+  "license": "MIT"
+} 

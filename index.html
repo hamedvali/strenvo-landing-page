@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Strenvo Magnetic Shaker Bottle – Gym Bottle with Phone Holder</title>
+  <meta name="description" content="Strenvo magnetic shaker bottle: mounts to racks & benches, holds your phone steady, BPA-free, leak-proof, smooth mixing. View it on Amazon." />
+  <link rel="canonical" href="https://strenvo.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Strenvo Magnetic Shaker Bottle" />
+  <meta property="og:description" content="Mounts to gym equipment. Holds your phone. Leak-proof & BPA-free. View on Amazon." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://strenvo.com/" />
+  <meta property="og:image" content="https://strenvo.com/strenvo-bottle-og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Product Schema for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Strenvo Magnetic Shaker Bottle 24oz (700ml)",
+    "brand": { "@type": "Brand", "name": "Strenvo" },
+    "description": "Magnetic gym shaker bottle with phone holder. Attaches to racks and benches, leak-proof, BPA-free, MagSafe-ready, smooth mixing.",
+    "category": "SportingGoods > Fitness Accessories",
+    "image": [
+      "https://strenvo.com/strenvo-bottle-hero.jpg"
+    ],
+    "material": "BPA-free plastic body; stainless steel shaker ball; silicone gasket",
+    "color": "Black",
+    "additionalProperty": [
+      { "@type": "PropertyValue", "name": "Capacity", "value": "24 oz / 700 ml" },
+      { "@type": "PropertyValue", "name": "Features", "value": "Magnetic mount, phone holder (MagSafe compatible), leak-proof flip lid" },
+      { "@type": "PropertyValue", "name": "Care", "value": "Top-rack dishwasher safe" },
+      { "@type": "PropertyValue", "name": "Surface note", "value": "Sticks to exposed steel; not aluminum or thick rubber coatings" }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.amazon.com/dp/B0DV4WYKZ6",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0c0c0e;           /* deep charcoal */
+      --bg-2:#111216;         /* slightly lighter */
+      --text:#f3f4f6;         /* near-white */
+      --muted:#aeb2bd;        /* cool gray */
+      --brand:#9df671;        /* energetic lime for gym vibe */
+      --accent:#7be0ff;       /* cool accent for small hints */
+      --glass:rgba(255,255,255,.06);
+      --ring:rgba(157,246,113,.2);
+      --max:1220px;
+      --radius:18px;
+      --space:clamp(18px, 2.5vw, 28px);
+      --big-gap:clamp(42px, 7vw, 120px);
+      --hero-h: min(92vh, 960px);
+      --shadow: 0 10px 30px rgba(0,0,0,.4);
+    }
+
+    /* Reset-ish */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text);
+      background: radial-gradient(1400px 800px at 85% -10%, #1a1d23 0%, transparent 70%) no-repeat,
+                  radial-gradient(1200px 700px at -20% 10%, #151922 0%, transparent 65%) no-repeat,
+                  var(--bg);
+      line-height:1.5;
+      overflow-x:hidden;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* subtle grain */
+    body:after{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none;
+      background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.05"/></svg>');
+      mix-blend-mode:soft-light;
+    }
+
+    /* Layout */
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 var(--space)}
+    header{
+      position:sticky; top:0; z-index:40;
+      backdrop-filter:saturate(140%) blur(6px);
+      background:linear-gradient(to bottom, rgba(12,12,14,.8), rgba(12,12,14,.35));
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .nav{
+      height:68px; display:flex; align-items:center; justify-content:space-between;
+    }
+    .logo{
+      display:flex; gap:10px; align-items:center; letter-spacing:.08em; text-transform:uppercase;
+      font-weight:700;
+    }
+    .logo .dot{ width:10px; height:10px; border-radius:50%; background:var(--brand); box-shadow:0 0 0 6px var(--ring)}
+    .cta{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:14px 20px; border-radius:999px;
+      background:linear-gradient(180deg, var(--brand), #7fe85d);
+      color:#0b0d0f; font-weight:700; letter-spacing:.02em;
+      box-shadow: 0 10px 20px rgba(124, 255, 120, .15);
+      transform: translateZ(0);
+      will-change: transform;
+    }
+    .cta:hover{ transform:translateY(-1px) scale(1.02)}
+    .cta:active{ transform:translateY(0) scale(.99)}
+    .cta small{opacity:.7; font-weight:600}
+
+    /* Hero */
+    .hero{
+      min-height:var(--hero-h);
+      display:grid; align-items:center;
+      grid-template-columns: 1.15fr .85fr;
+      gap: var(--big-gap);
+      padding: clamp(40px, 6vw, 80px) 0;
+    }
+    .headline{
+      font-size: clamp(34px, 6vw, 72px);
+      line-height:1.05; font-weight:800; letter-spacing:-.02em;
+      margin:0 0 14px;
+    }
+    .sub{
+      color:var(--muted); font-size: clamp(16px, 1.5vw, 20px);
+      max-width: 58ch; margin-bottom: 28px;
+    }
+    .chips{display:flex; flex-wrap:wrap; gap:10px; margin:20px 0 30px}
+    .chip{
+      padding:8px 12px; border-radius:999px; background:var(--glass); border:1px solid rgba(255,255,255,.06);
+      color:#d6d8de; font-weight:600; font-size:14px;
+    }
+    .hero-media{
+      position:relative; perspective:1200px;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .bottle{
+      width:min(560px, 100%); aspect-ratio: 3/5;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.01));
+      border-radius: 40px;
+      display:grid; place-items:center;
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+      transform-style:preserve-3d;
+    }
+    .bottle img{
+      width:100%; height:100%; object-fit:contain; object-position:center;
+      transform: translateZ(40px);
+      pointer-events:none;
+    }
+    .ring{
+      position:absolute; inset:auto -20% -16% -20%;
+      height:60%; border-radius:50%;
+      background: radial-gradient(60% 80% at 50% 30%, rgba(123,224,255,.35), transparent 70%),
+                  radial-gradient(80% 100% at 50% 100%, rgba(157,246,113,.28), transparent 60%);
+      filter: blur(18px);
+      transform: translateZ(0);
+    }
+
+    /* Sections */
+    section{padding: var(--big-gap) 0}
+    .section-title{
+      font-size: clamp(22px, 3.2vw, 38px);
+      line-height:1.15; margin:0 0 14px; letter-spacing:-.01em;
+    }
+    .section-sub{ color:var(--muted); max-width:70ch; margin:0 0 24px}
+
+    .features{
+      display:grid; grid-template-columns:repeat(3, 1fr);
+      gap: clamp(18px, 2.4vw, 28px);
+    }
+    .card{
+      padding: clamp(18px, 2.2vw, 26px);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.07);
+      border-radius: var(--radius);
+      min-height: 180px;
+      position:relative; overflow:hidden;
+    }
+    .card:before{
+      content:"";
+      position:absolute; inset:-30% -10% auto -10%; height:80%;
+      background: radial-gradient(50% 60% at 50% 20%, rgba(157,246,113,.12), transparent 60%);
+      pointer-events:none;
+    }
+    .card h3{margin:0 0 8px; font-size: clamp(18px, 1.6vw, 22px)}
+    .card p{margin:0; color:#cfd3dd}
+
+    .split{
+      display:grid; grid-template-columns: 1fr 1fr; gap: var(--big-gap);
+      align-items:center;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:10px; padding:8px 12px; border-radius:999px;
+      background: var(--glass); border:1px solid rgba(255,255,255,.08); color:#cfd3dd; font-weight:600; font-size:14px;
+    }
+
+    .faq{ display:grid; gap:14px; max-width:900px}
+    details{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.07);
+      border-radius: 14px; padding:16px 18px;
+    }
+    details > summary{ cursor:pointer; font-weight:700 }
+    details > div{ color:#cfd3dd; padding-top:10px }
+
+    /* Footer */
+    footer{
+      padding: 36px 0 60px;
+      color:#c7c9d2;
+      border-top:1px solid rgba(255,255,255,.08);
+      background: linear-gradient(180deg, rgba(255,255,255,.03), transparent);
+    }
+    .foot{ display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap }
+    .foot small{color:#9aa0ad}
+
+    /* Sticky CTA (same single action) */
+    .sticky{
+      position:fixed; left:50%; transform:translateX(-50%);
+      bottom:18px; z-index:50; display:none;
+      background:rgba(12,12,14,.75); backdrop-filter: blur(6px) saturate(130%);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:999px; padding:8px; box-shadow: var(--shadow);
+    }
+    .sticky .cta{ box-shadow:none }
+
+    /* Promo Popup */
+    .popup{
+      position:fixed; inset:0; display:none; place-items:center; z-index:60;
+      background:rgba(0,0,0,.6);
+    }
+    .modal{
+      width:min(560px, 92vw);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.1);
+      border-radius: 20px; padding: 22px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.6);
+    }
+    .modal h3{ margin:0 0 6px }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px;
+      background: #111a11; color:#d4ffd0; border:1px solid rgba(157,246,113,.3); font-weight:800;
+    }
+    .code{
+      display:flex; gap:10px; align-items:center; margin:16px 0 10px;
+      padding:10px 12px; border-radius:10px; background:#0f1214; border:1px dashed rgba(157,246,113,.35);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    }
+    .ghost{
+      display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.18); color:#e8eaf0;
+    }
+    .grid-2{ display:grid; grid-template-columns:1fr auto; gap:14px; align-items:center }
+    .close-x{ 
+      cursor:pointer; 
+      margin-left:auto; 
+      opacity:1; 
+      color: #ffffff; 
+      font-size: 18px; 
+      font-weight: bold;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .close-x:hover {
+      background: rgba(255,255,255,0.2);
+      border-color: rgba(255,255,255,0.4);
+    }
+    .pop-actions{ display:flex; gap:12px; flex-wrap:wrap; margin-top:10px }
+
+    /* Reveal on scroll */
+    [data-reveal]{opacity:0; transform:translateY(20px); transition:opacity .8s ease, transform .8s ease}
+    [data-reveal].show{opacity:1; transform:none}
+
+    /* Responsive */
+    @media (max-width: 1060px){
+      .hero{ grid-template-columns: 1fr; gap:40px; text-align:center }
+      .chips{justify-content:center}
+      .hero-media{ order:-1 }
+      .split{ grid-template-columns: 1fr }
+      .features{ grid-template-columns: 1fr 1fr }
+    }
+    @media (max-width: 680px){
+      .features{ grid-template-columns: 1fr }
+      .sticky{ width:calc(100% - 20px) }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .cta, .bottle{ transition:none !important; transform:none !important }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="wrap nav">
+      <div class="logo" aria-label="Strenvo">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Strenvo</span>
+      </div>
+      <a class="cta" href="https://www.amazon.com/dp/B0DV4WYKZ6" target="_blank" rel="noopener">
+        View on Amazon <small>→</small>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="wrap hero">
+      <div>
+        <h1 class="headline" data-reveal>Magnetic shaker for people who train hard</h1>
+        <p class="sub" data-reveal>
+          Mount it on racks and benches. Keep your phone steady. Leak-proof, BPA-free, smooth mixing.
+          One bottle that keeps your setup clean and your focus sharp.
+        </p>
+        <div class="chips" data-reveal>
+          <span class="chip">Magnetic mount</span>
+          <span class="chip">Phone holder / MagSafe-ready</span>
+          <span class="chip">Leak-proof flip lid</span>
+          <span class="chip">24oz / 700ml</span>
+          <span class="chip">BPA-free</span>
+        </div>
+        <a class="cta" href="https://www.amazon.com/dp/B0DV4WYKZ6" target="_blank" rel="noopener" data-reveal>
+          View on Amazon <small>Secure checkout on Amazon</small>
+        </a>
+      </div>
+
+      <div class="hero-media" aria-hidden="true">
+        <div class="bottle" id="tilt">
+          <!-- Replace with your actual image filename -->
+          <img src="strenvo-magnetic-gym-shaker-bottle.png" alt="Strenvo magnetic shaker bottle" />
+          <div class="ring"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature grid -->
+    <section class="wrap">
+      <div style="margin-bottom:18px">
+        <span class="pill">Built for real gyms</span>
+      </div>
+      <h2 class="section-title" data-reveal>Why athletes switch to Strenvo</h2>
+      <p class="section-sub" data-reveal>It solves the annoying gym stuff: no more bottles on dirty floors, no more wobbling phones, no leaks in your bag. Just lift.</p>
+
+      <div class="features">
+        <div class="card" data-reveal>
+          <h3>Mounts anywhere magnetic</h3>
+          <p>Snap it to racks, benches, or lockers so hydration is always in reach and off the floor.</p>
+        </div>
+        <div class="card" data-reveal>
+          <h3>Phone holder for tracking</h3>
+          <p>Film sets, follow timers, or keep music close. Works with MagSafe and includes an adhesive plate.</p>
+        </div>
+        <div class="card" data-reveal>
+          <h3>Leak‑proof + smooth mixing</h3>
+          <p>Flip‑lock lid prevents spills. Stainless shaker ball gives lump‑free shakes, fast.</p>
+        </div>
+        <div class="card" data-reveal>
+          <h3>Clean & safe materials</h3>
+          <p>BPA‑free, odor‑resistant plastic with enclosed magnets. Built for daily use.</p>
+        </div>
+        <div class="card" data-reveal>
+          <h3>Carry loop, solid grip</h3>
+          <p>Comfortable finger loop and ergonomic body make it easy between sets.</p>
+        </div>
+        <div class="card" data-reveal>
+          <h3>24oz / 700ml capacity</h3>
+          <p>Room for protein, pre, BCAAs, or water — one bottle for the full session.</p>
+        </div>
+      </div>
+    </section>
+<br> <br> <br> <br> 
+    <!-- Minimal split block -->
+    <section class="wrap split">
+      <div>
+        <h2 class="section-title" data-reveal>Stay organized. Stay focused.</h2>
+        <p class="section-sub" data-reveal>Less bending, less fumbling, fewer spills. Keep your setup tight and your attention on the next rep. That’s the point.</p>
+        <a class="cta" href="https://www.amazon.com/dp/B0DV4WYKZ6" target="_blank" rel="noopener" data-reveal>
+          View on Amazon <small>Only on Amazon</small>
+        </a>
+      </div>
+      <div aria-hidden="true">
+        <div class="card" style="min-height:280px" data-reveal>
+          <h3>Notes on surfaces</h3>
+          <p>Sticks to exposed steel. Won’t stick to aluminum or thick rubber coatings.</p>
+          <div style="height:14px"></div>
+          <h3>In the box</h3>
+          <p>Bottle, shaker ball, adhesive metal plate for non‑MagSafe phones.</p>
+        </div>
+      </div>
+    </section>
+    <br> <br>
+
+    <!-- FAQ -->
+    <section class="wrap">
+      <h2 class="section-title" data-reveal>Quick answers</h2>
+      <div class="faq">
+        <details data-reveal>
+          <summary>Is it MagSafe compatible?</summary>
+          <div>Yes. It holds MagSafe phones/cases. For non‑MagSafe phones we include an adhesive metal plate.</div>
+        </details>
+        <details data-reveal>
+          <summary>Is it leak‑proof?</summary>
+          <div>Yes. The flip‑top lid locks tight. Toss it in your bag without worry.</div>
+        </details>
+        <details data-reveal>
+          <summary>Dishwasher safe?</summary>
+          <div>Top‑rack recommended. Magnets are fully enclosed to prevent rust.</div>
+        </details>
+      </div>
+    </section>
+    <br> <br>    <br> <br> 
+  </main>
+
+  <!-- Sticky CTA -->
+  <div class="sticky" id="sticky">
+    <a class="cta" href="https://www.amazon.com/dp/B0DV4WYKZ6" target="_blank" rel="noopener">
+      View on Amazon <small>→</small>
+    </a>
+  </div>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap foot">
+      <div class="logo" aria-label="Strenvo">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Strenvo</span>
+      </div>
+      <div>
+        <div>Contact: <a href="mailto:info@strenvo.co">info@strenvo.co</a></div>
+        <small>© <span id="y"></span> Strenvo</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Promo Popup -->
+  <div class="popup" id="popup" aria-hidden="true" role="dialog" aria-labelledby="p-title">
+    <div class="modal">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:6px">
+        <span class="badge">20% OFF</span>
+        <button class="ghost close-x" id="closePop" aria-label="Close">✕</button>
+      </div>
+      <h3 id="p-title">Limited promo for first orders</h3>
+      <p style="color:#cfd3dd">Use the code below on Amazon. It copies automatically.</p>
+      <div class="grid-2">
+        <div class="code"><strong id="codeTxt">STRENVO-LANDING-20</strong></div>
+        <button class="cta" id="copyBtn">Copy code</button>
+      </div>
+      <div class="pop-actions">
+        <a class="ghost" href="https://www.amazon.com/dp/B0DV4WYKZ6" target="_blank" rel="noopener">Apply on Amazon →</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // scroll reveal
+    const revealEls = [...document.querySelectorAll('[data-reveal]')];
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); }
+      });
+    }, { threshold:.2 });
+    revealEls.forEach(el=>io.observe(el));
+
+    // parallax tilt on hero card
+    const card = document.getElementById('tilt');
+    const r = 14; // max rotate
+    const handleMove = (e)=>{
+      const rect = card.getBoundingClientRect();
+      const x = (e.clientX - rect.left)/rect.width;
+      const y = (e.clientY - rect.top)/rect.height;
+      const rx = (y - .5) * -r;
+      const ry = (x - .5) * r;
+      card.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+    };
+    const reset = ()=> card.style.transform = 'rotateX(0) rotateY(0)';
+    card.addEventListener('mousemove', handleMove);
+    card.addEventListener('mouseleave', reset);
+
+    // sticky CTA after scroll
+    const sticky = document.getElementById('sticky');
+    let shownSticky = false;
+    window.addEventListener('scroll', ()=>{
+      if (window.scrollY > 260 && !shownSticky){
+        sticky.style.display = 'block';
+        shownSticky = true;
+      }
+    });
+
+    // promo popup: once per session after 25s or 60% scroll
+    const popup = document.getElementById('popup');
+    const closePop = document.getElementById('closePop');
+    const copyBtn = document.getElementById('copyBtn');
+    const codeTxt = document.getElementById('codeTxt');
+    
+
+
+    const openPopup = ()=>{
+      if(sessionStorage.getItem('promoShown')) return;
+      popup.style.display = 'grid';
+      popup.setAttribute('aria-hidden','false');
+      sessionStorage.setItem('promoShown','1');
+    };
+    // Show popup after 20 seconds
+    setTimeout(openPopup, 1000);
+    window.addEventListener('scroll', ()=>{
+      const sc = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      if(sc > .6) openPopup();
+    });
+    closePop.addEventListener('click', ()=>{
+      popup.style.display = 'none';
+      popup.setAttribute('aria-hidden','true');
+    });
+    copyBtn.addEventListener('click', async ()=>{
+      try{
+        await navigator.clipboard.writeText(codeTxt.textContent.trim());
+        copyBtn.textContent = 'Copied ✓';
+        setTimeout(()=> copyBtn.textContent = 'Copy code', 1600);
+      }catch(e){ /* ignore */ }
+    });
+
+    // Respect reduced motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      card.removeEventListener('mousemove', handleMove);
+      card.removeEventListener('mouseleave', reset);
+    }
+
+
+  </script>
+</body>
+</html>
