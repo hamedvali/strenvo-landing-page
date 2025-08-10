@@ -6,6 +6,9 @@ COPY index.html /usr/share/nginx/html/
 # Copy all image files
 COPY *.png /usr/share/nginx/html/
 
+# Copy sitemap.xml
+COPY sitemap.xml /usr/share/nginx/html/
+
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
 
