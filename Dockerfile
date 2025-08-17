@@ -9,6 +9,10 @@ COPY *.png /usr/share/nginx/html/
 # Copy the magnetic-phone-holder-for-gym page and its assets (jpg/png)
 COPY magnetic-phone-holder-for-gym/ /usr/share/nginx/html/magnetic-phone-holder-for-gym/
 
+# Copy static sections
+COPY contact/ /usr/share/nginx/html/contact/
+COPY faq/ /usr/share/nginx/html/faq/
+
 # Copy sitemap.xml
 COPY sitemap.xml /usr/share/nginx/html/
 

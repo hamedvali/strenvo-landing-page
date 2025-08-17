@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Strenvo</title>
+  <meta name="description" content="Contact Strenvo for support, wholesale, or press. We usually reply within 24 hours." />
+  <link rel="canonical" href="https://strenvo.co/contact/" />
+
+  <style>
+    :root{ --bg:#0c0c0e; --text:#f3f4f6; --muted:#aeb2bd; --brand:#9df671; --glass:rgba(255,255,255,.06); --max:1220px; --space:clamp(18px, 2.5vw, 28px); --big-gap:clamp(42px, 7vw, 120px)}
+    *{box-sizing:border-box}
+    body{margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; color:var(--text); background: var(--bg)}
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 var(--space)}
+    header{position:sticky; top:0; z-index:40; backdrop-filter:saturate(140%) blur(6px); background:linear-gradient(to bottom, rgba(12,12,14,.8), rgba(12,12,14,.35)); border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{height:68px; display:flex; align-items:center; justify-content:space-between}
+    .logo{display:flex; gap:10px; align-items:center; font-weight:700}
+    .cta{display:inline-flex; align-items:center; gap:10px; padding:14px 20px; border-radius:999px; background:linear-gradient(180deg, var(--brand), #7fe85d); color:#0b0d0f; font-weight:700}
+    .ghost{display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:999px; border:1px solid rgba(255,255,255,.18); color:#e8eaf0}
+    section{padding: var(--big-gap) 0}
+    .headline{font-size: clamp(28px, 4.8vw, 52px); line-height:1.1; margin:0 0 10px; font-weight:800}
+    .sub{color:var(--muted); max-width:70ch}
+    .card{padding:22px; background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.07); border-radius:16px}
+    label{display:block; margin:12px 0 6px}
+    input, textarea{width:100%; padding:14px; border-radius:10px; border:1px solid #3a3a3a; background:#151517; color:#fff}
+    textarea{min-height:140px; resize:vertical}
+    footer{padding:36px 0 60px; color:#c7c9d2; border-top:1px solid rgba(255,255,255,.08)}
+    .foot{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="/" aria-label="Strenvo homepage">
+        <img src="/Strenvo.png" alt="Strenvo" style="height:32px;width:auto" />
+      </a>
+      <div style="display:flex;gap:12px;align-items:center">
+        <a class="ghost" href="/faq/">FAQ</a>
+        <a class="cta" href="https://www.amazon.com/dp/B0DV4WYKZ6" target="_blank" rel="noopener">Get Yours Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <br> <br> <br> <br> 
+    <section class="wrap">
+      <h1 class="headline">Contact us</h1>
+      <p class="sub">Have a question about your order or want to know more about our products? You can either send us a message using this form or email <b><a href="mailto:info@strenvo.co">info@strenvo.co</a></b>. We usually reply within 24 hours.</p>
+      <div style="height:14px"></div>
+      <div class="card">
+        <form id="contactForm" action="https://formspree.io/f/xzzvyjeg" method="POST">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+
+          <div style="height:14px"></div>
+          <button class="cta" type="submit">Send message</button>
+          <input type="hidden" name="page" value="contact" />
+        </form>
+        <div id="contactOk" style="display:none;">
+          <h3 style="margin:8px 0 6px">Thanks! Message received.</h3>
+          <p class="sub">We’ll reply to your email shortly. If it’s urgent, reach us at <a href="mailto:info@strenvo.co">info@strenvo.co</a>.</p>
+        </div>
+      </div>
+    </section>
+    <br> <br> <br> <br> 
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <a class="logo" href="/" aria-label="Strenvo homepage">
+        <img src="/Strenvo.png" alt="Strenvo" style="height:28px;width:auto" />
+      </a>
+      <div>
+        <div>Contact: <a href="mailto:info@strenvo.co">info@strenvo.co</a></div>
+        <small>© <span id="y"></span> Strenvo</small>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const form = document.getElementById('contactForm');
+    const ok = document.getElementById('contactOk');
+    form.addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      const fd = new FormData(form);
+      try{
+        const res = await fetch(form.action, { method:'POST', body:fd, headers:{ 'Accept':'application/json' }});
+        if(!res.ok) throw new Error('Failed');
+        form.style.display = 'none';
+        ok.style.display = 'block';
+      }catch(err){
+        form.style.display = 'none';
+        ok.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
+
+
